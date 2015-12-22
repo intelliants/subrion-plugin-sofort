@@ -1,0 +1,53 @@
+<p>Installation is a very simple process. Just click Install and the plugin installation will be performed.</p>
+
+<p>The newly installed plugin requires the following data to be properly configured:</p>
+
+<ul>
+    <li><strong>Sofort User ID</strong> — it's given to you when you registered at sofort.com</li>
+    <li><strong>Sofort Project Key</strong> — will be given to you once you register a new merchant project <em>(see below)</em></li>
+</ul>
+
+<h3>Project at sofort.com</h3>
+
+<p>The corresponding project should be created at sofort.com. Below are instructions how to create it:</p>
+
+<ol>
+    <li>Sign in to your merchant account at sofort.com</li>
+    <li>Click the &quot;My projects&quot; link in menu</li>
+    <li>Once the new page opened, click the &quot;Add new project&quot; link</li>
+    <li>Click the &quot;Create project&quot; button for &quot;Sofort Banking&quot; icon</li>
+    <li>On the &quot;Choose your project type&quot; page, select the &quot;Classic project&quot; option and click the &quot;Create project&quot; button</li>
+    <li>Set the &quot;Success link&quot; and &quot;Abort link&quot; to the following values:
+        <dl>
+            <dt>Success link</dt>
+            <dd><em>[Your site's URL with http/https]</em>-USER_VARIABLE_2-pay/-USER_VARIABLE_0-/completed/?ref=-TRANSACTION-&amt=-AMOUNT-&currency=-CURRENCY_ID-&payer=-SENDER_HOLDER-&s=-USER_VARIABLE_1-</dd>
+            <dt>Abort link</dt>
+            <dd><em>[Your site's URL with http/https]</em>-USER_VARIABLE_2-pay/-USER_VARIABLE_0-/canceled/</dd>
+        </dl>
+    </li>
+</ol>
+
+<p>It's also recommended to set the &quot;Automatic redirection&quot; option on.</p>
+
+<h3>Setup payment notifications</h3>
+
+<p>This plugin also supports payment notifications feature. Below is the simple instruction to set it up:</p>
+
+<ol>
+    <li>Sign in to your merchant account at sofort.com</li>
+    <li>Click the &quot;My projects&quot; link in menu</li>
+    <li>Select the &quot;Extended settings&quot; tab</li>
+    <li>Click the &quot;Notifications&quot; link</li>
+    <li>Click the &quot;Add new notification&quot; link</li>
+    <li>Select the &quot;HTTP&quot; tab and set the options as follows:
+        <dl>
+            <dt>Activated</dt>
+            <dd><em>Yes</em></dd>
+            <dt>Notification URL</dt>
+            <dd><em>[Your site's URL with http/https]</em>ipn/sofort/</dd>
+            <dt>Method</dt>
+            <dd>POST</dd>
+        </dl>
+    </li>
+    <li>Click the &quot;Save&quot; button</li>
+</ol>
