@@ -15,7 +15,7 @@
 	<config group="financial" name="sofort_project_id" type="text" description="Project key"><![CDATA[]]></config>
 
 	<hooks>
-		<hook name="paymentButtons" type="smarty" filename="plugins/sofort/templates/button.tpl" page_type="front"><![CDATA[]]></hook>
+		<hook name="paymentButtons" type="smarty" filename="button" page_type="front"><![CDATA[]]></hook>
 	</hooks>
 
 	<pages>
