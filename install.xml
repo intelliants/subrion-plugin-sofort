@@ -4,10 +4,10 @@
 	<summary>Sofort payment gateway integration. Allows to accept payments using Sofort.</summary>
 	<author>Intelliants LLC</author>
 	<contributor>Intelliants LLC</contributor>
-	<version>1.0.0</version>
-	<date>2015-12-21</date>
+	<version>1.0.1</version>
+	<date>2016-01-22</date>
 	<category>payments</category>
-	<compatibility>4.0</compatibility>
+	<compatibility>4.0.3</compatibility>
 
 	<config group="financial" name="sofort" type="divider">Sofort</config>
 	<config group="financial" name="sofort_currency" type="text" description="Currency">EUR</config>
@@ -15,7 +15,7 @@
 	<config group="financial" name="sofort_project_id" type="text" description="Project key"><![CDATA[]]></config>
 
 	<hooks>
-		<hook name="paymentButtons" type="smarty" filename="plugins/sofort/templates/front/form.tpl" page_type="front"><![CDATA[]]></hook>
+		<hook name="paymentButtons" type="smarty" page_type="front" filename="button"><![CDATA[]]></hook>
 	</hooks>
 
 	<pages>
