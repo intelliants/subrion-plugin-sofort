@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<plugin name="sofort">
+<module type="plugin" name="sofort">
 	<title>Sofort</title>
 	<summary>Sofort payment gateway integration. Allows to accept payments using Sofort.</summary>
 	<author>Intelliants LLC</author>
 	<contributor>Intelliants LLC</contributor>
-	<version>1.0.0</version>
-	<date>2016-01-22</date>
+	<version>1.1.0</version>
+	<date>2017-03-13</date>
 	<category>payments</category>
-	<compatibility>4.0.3</compatibility>
+	<compatibility>4.1</compatibility>
 
 	<config group="financial" name="sofort" type="divider">Sofort</config>
 	<config group="financial" name="sofort_currency" type="text" description="Currency">EUR</config>
@@ -21,4 +21,4 @@
 	<pages>
 		<page name="ipn_sofort" url="ipn/sofort/" service="1">Sofort IPN</page>
 	</pages>
-</plugin>
+</module>

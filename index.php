@@ -2,7 +2,7 @@
 /******************************************************************************
  *
  * Subrion - open source content management system
- * Copyright (C) 2016 Intelliants, LLC <http://www.intelliants.com>
+ * Copyright (C) 2017 Intelliants, LLC <https://intelliants.com>
  *
  * This file is part of Subrion.
  *
@@ -20,7 +20,7 @@
  * along with Subrion. If not, see <http://www.gnu.org/licenses/>.
  *
  *
- * @link http://www.subrion.org/
+ * @link https://subrion.org/
  *
  ******************************************************************************/
 
@@ -59,11 +59,11 @@ if (iaView::REQUEST_HTML == $iaView->getRequestType())
 
 			$iaDb->update($values, iaDb::convertIds($params['user_variable_0'], 'sec_key'), null, $iaTransaction::getTable());
 
-			$iaTransaction->addIpnLogEntry(IA_CURRENT_PLUGIN, $params, 'Valid');
+			$iaTransaction->addIpnLogEntry(IA_CURRENT_MODULE, $params, 'Valid');
 
 			return;
 		}
 	}
 
-	$iaTransaction->addIpnLogEntry(IA_CURRENT_PLUGIN, $params, 'Invalid');
+	$iaTransaction->addIpnLogEntry(IA_CURRENT_MODULE, $params, 'Invalid');
 }
